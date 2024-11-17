@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -73,10 +73,10 @@ export default function Home() {
   </div>
   <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center border p-2 w-full max-w-sm rounded-lg font-sans overflow-hidden mx-auto mt-4">
   <div className="min-h-[245px]">
-<img src="/images/Next_JS.png" alt="blog" className="w-full rounded-lg"/>
+<img src="/images/Next_JS.png" alt="blog" width={500} height={500} className="w-full rounded-lg"/>
 </div>
 <div className="flex flex-col items-center justify-center p-4 text-center">
-<h3 className="text-xl font-black"> What's New In Next JS? </h3>
+<h3 className="text-xl font-black"> Discover the Latest in Next.js! </h3>
 <p className="mt-3 text-sm text-gray-500 leading-relaxed"> Exploring Next.js 2024 while learning in easily. </p>
 <button className="mt-4 px-6 py-2 w-full bg-gray-500 text-white rounded-lg tracking-wider font-semibold border-spacing-2 outline-none hover:bg-red-400"> Read More </button>
 </div>
