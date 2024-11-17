@@ -1,5 +1,6 @@
 import React from "react";
-import Image from "next/image";
+import Image from 'next/image';
+
 
 export default function Home() {
   return (
@@ -34,8 +35,18 @@ export default function Home() {
   <div className="container mx-auto flex flex-col px-5 py-8 justify-center items-center">
 
 
+ 
 
-    <img className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="/images/pic.jpg" width={720} height={600}/>
+<Image
+  src="/images/pic.jpg"
+  alt="profile"
+  width={500}
+  height={300}
+  layout="responsive"
+  className="rounded-lg max-w-md mx-auto"
+/>
+
+
     <div className="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
       <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Step Into My World</h1>
     
@@ -73,7 +84,15 @@ export default function Home() {
   </div>
   <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center border p-2 w-full max-w-sm rounded-lg font-sans overflow-hidden mx-auto mt-4">
   <div className="min-h-[245px]">
-<img src="/images/Next_JS.png" alt="blog" width={500} height={500} className="w-full rounded-lg"/>
+  
+<Image
+  src="/images/Next_JS.png"
+  alt="blog"
+  width={500}
+  height={300}
+  className="w-full rounded-lg"
+/>
+
 </div>
 <div className="flex flex-col items-center justify-center p-4 text-center">
 <h3 className="text-xl font-black"> Discover the Latest in Next.js! </h3>
